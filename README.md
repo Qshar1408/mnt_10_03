@@ -77,6 +77,63 @@
 
 Все конфигурации, использованные в процессе решения задания, доступны по ссылке: [Ссылка](https://github.com/Qshar1408/mnt_10_03/tree/main/src)
 
+#### Задание 2
+
+1.Создал Dashboard c панелями:
+
+   * утилизация CPU для node-exporter
+
+```bash
+100 - avg(irate(node_cpu_seconds_total{job="node-exporter", mode="idle"}[1m])) * 100
+```
+
+![mnt_10_03](https://github.com/Qshar1408/mnt_10_03/blob/main/img/mnt_10_03_005.png)
+
+   * CPULA 1/5/15:
+
+```bash
+avg(node_load1{job="node-exporter"})
+avg(node_load5{job="node-exporter"})
+avg(node_load15{job="node-exporter"})
+```
+![mnt_10_03](https://github.com/Qshar1408/mnt_10_03/blob/main/img/mnt_10_03_006.png)
+
+   * количество свободной оперативной памяти:
+
+```bash
+node_memory_MemFree_bytes
+```
+![mnt_10_03](https://github.com/Qshar1408/mnt_10_03/blob/main/img/mnt_10_03_007.png)
+
+   * количество места на файловой системе:
+
+```bash
+node_filesystem_avail_bytes
+```
+![mnt_10_03](https://github.com/Qshar1408/mnt_10_03/blob/main/img/mnt_10_03_008.png)
+
+Общий скриншот Dashboard:
+
+![mnt_10_03](https://github.com/Qshar1408/mnt_10_03/blob/main/img/mnt_10_03_009.png)
+
+
+#### Задание 3
+
+Для панелей созданного ранее Dashboard настроил алертинг. Алерты отправляются в Telegram канал.
+
+![mnt_10_03](https://github.com/Qshar1408/mnt_10_03/blob/main/img/mnt_10_03_010.png)
+
+![mnt_10_03](https://github.com/Qshar1408/mnt_10_03/blob/main/img/mnt_10_03_011.png)
+
+![mnt_10_03](https://github.com/Qshar1408/mnt_10_03/blob/main/img/mnt_10_03_012.png)
+
+![mnt_10_03](https://github.com/Qshar1408/mnt_10_03/blob/main/img/mnt_10_03_013.png)
+
+#### Задание 4
+
+1.Сохранил Dashboard в json файл.
+
+2.Ссылка на файл: [Ссылка](https://github.com/Qshar1408/mnt_10_03/blob/main/src/Dashboard/Dashboard_202025-1759868118716.json)
 
 
 

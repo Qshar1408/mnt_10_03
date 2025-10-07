@@ -133,7 +133,7 @@ node_filesystem_avail_bytes
 
 1.Сохранил Dashboard в json файл.
 
-2.Ссылка на файл: [Ссылка](https://github.com/Qshar1408/mnt_10_03/blob/main/src/Dashboard/Dashboard_202025-1759868118716.json)
+2.Ссылка на файл: [Ссылка](https://github.com/Qshar1408/mnt_10_03/blob/main/src/Dashboard/Dashboard%202025-1759868118716.json)
 
 
 
